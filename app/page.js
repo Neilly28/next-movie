@@ -26,9 +26,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className={styles.main}>
-      <h1 className="text-4xl font-bold">Hello from Next 13!🔥</h1>
-      <div className="grid grid-cols-3 gap-12">
+    <main className="max-w-7xl mx-auto p-0 sm:p-12 flex flex-col justify-center items-center">
+      <div className="p-4 text-center">
+        <h1 className="text-7xl font-bold text-red-600 mb-4">Next-Movie</h1>
+        <h1 className="text-lg font-semibold text-slate-300 mb-24">
+          The most popular movies right now
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
         {movies?.map((movie) => (
           <Movie
             key={movie.id}

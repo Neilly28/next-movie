@@ -15,17 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`max-w-full mx-auto`}>
-        <nav className="font-bold flex justify-between items-center p-8">
-          <h1>logo</h1>
-          <ul>
-            <li>
-              <a href="/about">About</a>
-            </li>
-          </ul>
-        </nav>
-        {children}
-      </body>
+      <body className="mx-auto">{children}</body>
     </html>
   );
 }
